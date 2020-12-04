@@ -1,0 +1,18 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+<!-- Title Tag -->
+{% block title %} About Us {% endblock %}
+
+<!-- Meta Description -->
+{% block meta %} 
+  Give clients more information about your brand
+{% endblock %}
+
+{% block content %}
+    <div class="container my-5 py-5 text-center">
+        <h1 class="display-2 "> Thank you {{ name }} </h1>
+        <p class="display-4"> You have requested an appointment for {{ schedule }} </p>
+        <p class="display-6"> We are proccessing your request, and will contact you shortly! </p>
+    </div>
+{% endblock %}
